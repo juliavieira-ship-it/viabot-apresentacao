@@ -379,7 +379,7 @@ body::before {
 }
 .problem-item {
   display: grid;
-  grid-template-columns: 72px 1fr;
+  grid-template-columns: 84px 1fr;
   gap: 20px;
   align-items: start;
   background: var(--card);
@@ -397,14 +397,13 @@ body::before {
   color: var(--accent);
   border: 1px solid rgba(232,72,85,0.25);
   border-radius: 10px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 8px 8px;
+  padding: 8px 10px;
   text-align: center;
-  line-height: 1.2;
-  word-break: break-word;
+  line-height: 1.3;
 }
 .problem-content h4 {
   font-family: 'Sora', sans-serif;
@@ -1224,7 +1223,7 @@ body::before {
       <div class="abs-title">📊 Absorção por vertical — Jan a Mai/2026</div>
       <div class="abs-grid">
         <div class="abs-table-wrap">
-          <div class="abs-table-header chat">💬 IA no Chat</div>
+          <div class="abs-table-header chat">💬 IA no Chat — Retenção N1 (%)</div>
           <table class="abs-table">
             <thead><tr><th>Vertical</th><th>Jan</th><th>Fev</th><th>Mar</th><th>Abr ★</th><th>Mai</th></tr></thead>
             <tbody>
@@ -1238,7 +1237,7 @@ body::before {
           </table>
         </div>
         <div class="abs-table-wrap">
-          <div class="abs-table-header ticket">🎫 IA nos Tickets</div>
+          <div class="abs-table-header ticket">🎫 IA nos Tickets — Retenção N1 (%)</div>
           <table class="abs-table">
             <thead><tr><th>Vertical</th><th>Jan</th><th>Fev</th><th>Mar</th><th>Abr ★</th><th>Mai</th></tr></thead>
             <tbody>
@@ -1252,12 +1251,131 @@ body::before {
           </table>
         </div>
       </div>
-      <div class="april-callout">
-        Em dezembro de 2025, a retenção N1 era de <strong>17%</strong>. Em seis meses, chegamos a <strong>~38%</strong> — mais que dobramos. Mas abril foi o pico, e os números já recuaram. <strong>Sem mudança de arquitetura, esse é o teto.</strong>
+
+      <!-- OPORTUNIDADE -->
+      <div style="margin-top:28px;">
+        <div class="abs-title">📉 Oportunidade N1 — % do volume total que era elegível para IA</div>
+        <div class="abs-grid">
+          <div class="abs-table-wrap">
+            <div class="abs-table-header chat" style="opacity:0.7;">💬 Oportunidade no Chat (%)</div>
+            <table class="abs-table">
+              <thead><tr><th></th><th>Jan</th><th>Fev</th><th>Mar</th><th>Abr</th><th>Mai</th></tr></thead>
+              <tbody>
+                <tr><td class="bold-row">% do total</td><td class="num yellow">25,52%</td><td class="num yellow">25,28%</td><td class="num yellow">26,46%</td><td class="num red">17,18%</td><td class="num yellow">32,90%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="abs-table-wrap">
+            <div class="abs-table-header ticket" style="opacity:0.7;">🎫 Oportunidade nos Tickets (%)</div>
+            <table class="abs-table">
+              <thead><tr><th></th><th>Jan</th><th>Fev</th><th>Mar</th><th>Abr</th><th>Mai</th></tr></thead>
+              <tbody>
+                <tr><td class="bold-row">% do total</td><td class="num yellow">25,41%</td><td class="num yellow">24,36%</td><td class="num red">16,72%</td><td class="num red">18,10%</td><td class="num red">15,73%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="april-callout" style="margin-top:16px;">
+        Em dezembro de 2025, a retenção N1 era de <strong>17%</strong>. Hoje é ~38% no chat e ~35% nos tickets — mais que dobramos. Mas abril foi o pico, e os números já recuaram. <strong>Sem mudança de arquitetura, esse é o teto.</strong>
       </div>
     </div>
-  </div>
-</section>
+
+    <!-- ═══ DOCUMENTAÇÕES ═══ -->
+    <div style="margin-top:56px;padding-top:48px;border-top:1px solid var(--border);" class="fade-in">
+      <div class="section-num-bar" style="margin-bottom:20px;">
+        <span class="bar"></span>
+        <span class="tag">Documentações</span>
+      </div>
+
+      <div style="max-width:640px;margin:0 auto;">
+
+        <!-- Card número -->
+        <div style="background:var(--dark2);border:1px solid var(--border);border-radius:16px;padding:32px 28px;text-align:center;margin-bottom:16px;">
+          <div style="font-family:'Sora',sans-serif;font-weight:900;font-size:52px;letter-spacing:-0.03em;line-height:1;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">494</div>
+          <div style="font-size:13px;color:var(--text-soft);margin-top:10px;line-height:1.4;">artigos publicados em 2026</div>
+        </div>
+
+        <!-- Barras por vertical -->
+        <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px;">
+
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 20px;display:grid;grid-template-columns:140px 1fr 44px;gap:16px;align-items:center;">
+            <span style="font-family:'Sora',sans-serif;font-size:13px;font-weight:700;color:var(--text);">Agrotitan</span>
+            <div style="position:relative;height:8px;background:rgba(255,255,255,0.05);border-radius:999px;">
+              <div style="height:100%;width:100%;background:var(--gradient);border-radius:999px;"></div>
+              <div style="position:absolute;top:-3px;right:-1px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:2px solid var(--dark);box-shadow:0 0 6px rgba(232,72,85,0.4);"></div>
+            </div>
+            <span style="font-family:'Sora',sans-serif;font-size:15px;font-weight:800;color:var(--text);text-align:right;">229</span>
+          </div>
+
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 20px;display:grid;grid-template-columns:140px 1fr 44px;gap:16px;align-items:center;">
+            <span style="font-family:'Sora',sans-serif;font-size:13px;font-weight:700;color:var(--text);">Petroshow</span>
+            <div style="position:relative;height:8px;background:rgba(255,255,255,0.05);border-radius:999px;">
+              <div style="height:100%;width:45%;background:var(--gradient-blue);border-radius:999px;"></div>
+              <div style="position:absolute;top:-3px;left:calc(45% - 7px);width:14px;height:14px;border-radius:50%;background:var(--blue);border:2px solid var(--dark);box-shadow:0 0 6px rgba(47,95,232,0.4);"></div>
+            </div>
+            <span style="font-family:'Sora',sans-serif;font-size:15px;font-weight:800;color:var(--text);text-align:right;">103</span>
+          </div>
+
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 20px;display:grid;grid-template-columns:140px 1fr 44px;gap:16px;align-items:center;">
+            <span style="font-family:'Sora',sans-serif;font-size:13px;font-weight:700;color:var(--text);">Construshow</span>
+            <div style="position:relative;height:8px;background:rgba(255,255,255,0.05);border-radius:999px;">
+              <div style="height:100%;width:29%;background:linear-gradient(90deg,#7baeff,#2cb67d);border-radius:999px;"></div>
+              <div style="position:absolute;top:-3px;left:calc(29% - 7px);width:14px;height:14px;border-radius:50%;background:var(--green);border:2px solid var(--dark);box-shadow:0 0 6px rgba(44,182,125,0.4);"></div>
+            </div>
+            <span style="font-family:'Sora',sans-serif;font-size:15px;font-weight:800;color:var(--text);text-align:right;">66</span>
+          </div>
+
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 20px;display:grid;grid-template-columns:140px 1fr 44px;gap:16px;align-items:center;">
+            <span style="font-family:'Sora',sans-serif;font-size:13px;font-weight:700;color:var(--text);">Fisco Contábil</span>
+            <div style="position:relative;height:8px;background:rgba(255,255,255,0.05);border-radius:999px;">
+              <div style="height:100%;width:24%;background:var(--accent2);border-radius:999px;"></div>
+              <div style="position:absolute;top:-3px;left:calc(24% - 7px);width:14px;height:14px;border-radius:50%;background:var(--accent2);border:2px solid var(--dark);box-shadow:0 0 6px rgba(247,163,37,0.4);"></div>
+            </div>
+            <span style="font-family:'Sora',sans-serif;font-size:15px;font-weight:800;color:var(--text);text-align:right;">55</span>
+          </div>
+
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 20px;display:grid;grid-template-columns:140px 1fr 44px;gap:16px;align-items:center;">
+            <span style="font-family:'Sora',sans-serif;font-size:13px;font-weight:700;color:var(--text);">Agrotitan Faz.</span>
+            <div style="position:relative;height:8px;background:rgba(255,255,255,0.05);border-radius:999px;">
+              <div style="height:100%;width:10%;background:rgba(232,72,85,0.5);border-radius:999px;"></div>
+              <div style="position:absolute;top:-3px;left:calc(10% - 7px);width:14px;height:14px;border-radius:50%;background:rgba(232,72,85,0.6);border:2px solid var(--dark);box-shadow:0 0 6px rgba(232,72,85,0.3);"></div>
+            </div>
+            <span style="font-family:'Sora',sans-serif;font-size:15px;font-weight:800;color:var(--text);text-align:right;">23</span>
+          </div>
+
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 20px;display:grid;grid-template-columns:140px 1fr 44px;gap:16px;align-items:center;">
+            <span style="font-family:'Sora',sans-serif;font-size:13px;font-weight:700;color:var(--text);">Viasuper</span>
+            <div style="position:relative;height:8px;background:rgba(255,255,255,0.05);border-radius:999px;">
+              <div style="height:100%;width:5.7%;background:rgba(255,255,255,0.25);border-radius:999px;"></div>
+              <div style="position:absolute;top:-3px;left:calc(5.7% - 7px);width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,0.25);border:2px solid var(--dark);box-shadow:0 0 6px rgba(255,255,255,0.1);"></div>
+            </div>
+            <span style="font-family:'Sora',sans-serif;font-size:15px;font-weight:800;color:var(--text);text-align:right;">13</span>
+          </div>
+
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 20px;display:grid;grid-template-columns:140px 1fr 44px;gap:16px;align-items:center;">
+            <span style="font-family:'Sora',sans-serif;font-size:13px;font-weight:700;color:var(--text);">TalentRH</span>
+            <div style="position:relative;height:8px;background:rgba(255,255,255,0.05);border-radius:999px;">
+              <div style="height:100%;width:2.2%;background:rgba(232,72,85,0.4);border-radius:999px;"></div>
+              <div style="position:absolute;top:-3px;left:0;width:14px;height:14px;border-radius:50%;background:rgba(232,72,85,0.4);border:2px solid var(--dark);box-shadow:0 0 6px rgba(232,72,85,0.2);"></div>
+            </div>
+            <span style="font-family:'Sora',sans-serif;font-size:15px;font-weight:800;color:var(--text);text-align:right;">5</span>
+          </div>
+
+        </div>
+
+        <!-- Aviso importante -->
+        <div style="background:rgba(247,163,37,0.06);border:1px solid rgba(247,163,37,0.18);border-radius:12px;padding:16px 20px;text-align:center;">
+          <div style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent2);margin-bottom:6px;">⚠️ Importante</div>
+          <div style="font-size:13px;color:var(--text-soft);line-height:1.55;">Medimos o <strong style="color:var(--text);">quantitativo</strong> dessas documentações — não o <strong style="color:var(--text);">qualitativo</strong>. A IA consome tudo que é publicado, independente da qualidade do conteúdo.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 <!-- ===== 2. O PROBLEMA ===== -->
 <section class="section" id="problema">
